@@ -53,8 +53,14 @@ a { text-decoration: none; color: black; }
     content: '';
     display: inline-block;
     height: 20px;
+    -webkit-transition: transform .6s .6s, opacity .6s;
+    -moz-transition: transform .6s .6s, opacity .6s;
+    -o-transition: transform .6s .6s, opacity .6s;
     transition: transform .6s .6s, opacity .6s;
     opacity: 0;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
     transform: rotate(0deg);
     vertical-align: top;
     width: 20px;
@@ -64,6 +70,9 @@ a { text-decoration: none; color: black; }
 }
 .toTop.active:before, .toTop.active:after {
     opacity: 1;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 .toTop:hover:before, .toTop:hover:after {
