@@ -34,6 +34,43 @@ a { text-decoration: none; color: black; }
     border: 2px solid black;
 }
 
+.toTop {
+    z-index: 100;
+    position: fixed;
+    top: 35px;
+    left: 35px;
+    width: 30px;
+    height: 45px;
+    cursor: pointer;
+}
+.toTop:before, .toTop:after {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-color: #f15a3b;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    transition: transform .6s .6s, opacity .6s;
+    opacity: 0;
+    transform: rotate(0deg);
+    vertical-align: top;
+    width: 20px;
+}
+.toTop:after {
+    top: 15px;
+}
+.toTop.active:before, .toTop.active:after {
+    opacity: 1;
+    transform: rotate(-45deg);
+}
+.toTop:hover:before, .toTop:hover:after {
+    left: 4px;
+    border-width: 2px 2px 0 0;
+}
+
 .inner-cover {
     width: 87%;
     height: 290px;
