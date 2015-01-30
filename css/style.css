@@ -219,12 +219,15 @@ h3.stamp {
     width: 900px;
     margin: auto;
 }
-.field-block {
+.phases {
     display: inline-block;
     border: 1px black solid;
     margin: 15px -25px;
     padding: 0 25px;
-    text-align: center;
+}
+.phases p:first-of-type {
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
 }
 h2.rfp, h3.rfp {
     display: inline-block;
@@ -248,6 +251,7 @@ h2.rfp:before {
     text-align: center;
 }
 h3.rfp {
+    border-bottom: none;
     padding: 5px 0;
     margin-bottom: 5px;
 }
