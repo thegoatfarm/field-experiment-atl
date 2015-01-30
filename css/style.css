@@ -219,12 +219,18 @@ h3.stamp {
     width: 900px;
     margin: auto;
 }
-.field-block {
+.phases {
     display: inline-block;
-    border: 1px black solid;
-    margin: 15px -25px;
-    padding: 0 25px;
-    text-align: center;
+    border: 2px black solid;
+    margin: 15px -35px;
+    padding: 0 33px; /* compensate for border */
+}
+.phases p {
+    padding-bottom: 25px;
+    margin: 0;
+}
+.phases p:first-of-type {
+    border-bottom: 1px solid black;
 }
 h2.rfp, h3.rfp {
     display: inline-block;
@@ -248,8 +254,10 @@ h2.rfp:before {
     text-align: center;
 }
 h3.rfp {
+    border-bottom: none;
     padding: 5px 0;
-    margin-bottom: 5px;
+    margin: 25px 0 5px;
+    color: #5C5C59;
 }
 p.rfp {
     text-align: left;
