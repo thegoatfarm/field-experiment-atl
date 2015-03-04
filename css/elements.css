@@ -61,7 +61,7 @@ ul.nav li {
     padding-right: 20px;
     margin-right: 0;
     text-align: left;
-    font-family: "Courier New";
+    font-family: "Courier New", monospace;
     font-size: 14px;
     letter-spacing: 0;
     white-space: nowrap;
@@ -195,7 +195,7 @@ ul.links li {
     left: 16px;
     bottom: 8px;
     text-align: left;
-    font-family: "Courier New";
+    font-family: "Courier New", monospace;
     font-size: 14px;
     letter-spacing: 0;
 }

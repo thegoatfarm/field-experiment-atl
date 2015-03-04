@@ -96,7 +96,7 @@ a { text-decoration: none; color: black; }
 .tag-text {
     vertical-align: middle;
     display: table-cell;
-    font-family: "Courier New";
+    font-family: "Courier New", monospace;
     line-height: 15px;
     font-size: 15px;
     color: inherit;
@@ -214,7 +214,7 @@ h4 {
 p.about-text {
     margin: 0 auto;
     color: #231f20;
-    font-family: "Courier New";
+    font-family: "Courier New", monospace;
     line-height: 18px;
     font-size: 14px;
     letter-spacing: 0;
@@ -263,7 +263,7 @@ p.about-text {
     top: -26px;
     left: 0;
     padding: 0 20px;
-    font-family: "Courier New";
+    font-family: "Courier New", monospace;
     font-weight: 400;
     margin: 0;
     font-size: 14px;
@@ -274,7 +274,7 @@ p.about-text {
     line-height: 52px
 }
 .panelist p {
-    font-family: "Courier New";
+    font-family: "Courier New", monospace;
     font-size: 14px;
     margin-top: 36px;
     margin-right: 20px;
