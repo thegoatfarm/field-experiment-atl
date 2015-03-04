@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: "DINPro Medium";
     src: url(../fonts/DINPro-Medium.otf);
 }
@@ -9,7 +9,7 @@
 @font-face {
     font-family: "DINPro Bold";
     src: url(../fonts/DINPro-Bold.otf);
-}
+}*/
 @font-face {
     font-family: "Interstate Light Compressed";
     src: url(../fonts/Interstate-LightCompressed.ttf);
@@ -141,7 +141,7 @@ h3.stamp {
     bottom: 100%;
     right: 6%;
     margin: 0 0 .5em;
-    font-family: "DINPro Medium";
+    /*font-family: "DINPro Medium";*/
     font-size: 18px;
     letter-spacing: 0.01em;
     color: #998675;
@@ -175,7 +175,7 @@ h3.section-header {
 }
 h3.section-header > span {
     position: relative;
-    font-family: "DINPro Medium";
+    /*font-family: "DINPro Medium";*/
     font-size: 20px;
     letter-spacing: 0.025em;
     color: #231f20;
@@ -192,7 +192,7 @@ h3.section-header > span::after {
 .mission > p{
     width: 520px;
     margin: auto;
-    font-family: "DINPro Medium";
+    /*font-family: "DINPro Medium";*/
     font-size: 20px;
     letter-spacing: 0.025em;
     color: #231f20;
@@ -206,7 +206,7 @@ h3.section-header > span::after {
 
 h4 {
     color: #231f20;
-    font-family: "DINPro Medium";
+    /*font-family: "DINPro Medium";*/
     font-size: 16px;
     letter-spacing: 0.025em;
     margin: 40px 0 10px;
