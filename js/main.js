@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var $chevUp = $("#chevUp");
-    var $rfp = $("#rfp");
+    var $about = $("#fe-header");
 
     $(".toTop").click(function(e) {
         // smoothly scroll to top
@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll >= $rfp.offset().top - 10) {
+        if (scroll >= $about.offset().top - 10) {
             $chevUp.addClass("active");
         } else {
             $chevUp.removeClass("active");
