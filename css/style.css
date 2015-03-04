@@ -16,6 +16,13 @@
 }
 
 
+::selection {
+    background: #f15a3b; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: #f15a3b; /* Gecko Browsers */
+}
+
 html,body { width: 100%; height: 100%; min-height: 700px; padding: 0; margin: 0;}
 /*ul { padding:0; margin:0; white-space:nowrap; }
 li { margin: 0; list-style-type:none; display:block; float: left; }*/
@@ -27,11 +34,34 @@ a { text-decoration: none; color: black; }
     left: 50%;
     margin-top: -235px; 
     margin-left: -300px;*/
-    margin: 120px auto;
+    margin: 0 auto;
     position: relative;
     width: 600px;
     height: 330px;
     border: 2px solid black;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.wrapper {
+    background: url(../img/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 148px 0;
+    margin-bottom: 60px;
+    /*margin: 0 auto -140px;*/
+}
+.cover-white, .cover-white .stamp, .cover-white .inner-cover {
+    border-color: white !important;
+    color: white;
+}
+
+.nav {
+    height: 75px;
+    width: 100%;
+    background: white;
 }
 
 .toTop {
@@ -58,11 +88,11 @@ a { text-decoration: none; color: black; }
     -o-transition: -o-transform .6s .6s, opacity .6s;
     transition: transform .6s .6s, opacity .6s;
     opacity: 0;
-    -ms-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
     vertical-align: top;
     width: 20px;
 }
@@ -92,10 +122,39 @@ a { text-decoration: none; color: black; }
     right: 0;
     bottom: 0;
 }
-.menu-container {
+.tagline-container {
     position: relative;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid;
+    border-color: inherit;
+}
+.fe {
+    float: left;
+    padding: 0 15px;
+    display: block;
+    font-family: "Interstate Light Compressed";
+    font-size: 30px;
+    color: inherit;
+    height: 50px;
+    line-height: 50px;
+    border-right: 1px solid;
+    border-color: inherit;
+}
+.tagline {
+    overflow: hidden;
+    display: table;
+    height: 50px;
+    padding: 0 20px;
+    /*text-align: center;*/
+}
+.tag-text {
+    vertical-align: middle;
+    display: table-cell;
+    font-family: "Courier New";
+    line-height: 15px;
+    font-size: 15px;
+    color: inherit;
+    text-align: left;
 }
 ul.menu {
     position: absolute;
@@ -166,7 +225,7 @@ li .lower {
 }
 h1.title {
     margin: 0;
-    color: black;
+    color: inherit;
     font-family: "DINPro Bold";
     font-size: 42px;
     letter-spacing: 0.075em;
@@ -174,18 +233,20 @@ h1.title {
     font-weight: normal;
     height: 180px;
     line-height: 180px;
-    border: 1px solid black;
+    border: 1px solid;
+    border-color: inherit;
 }
 h2.presenter {
     margin: 0;
-    color: black;
+    color: inherit;
     font-family: "DINPro Regular";
     font-size: 16px;
     letter-spacing: 0.05em;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid;
+    border-color: inherit;
     border-bottom: none;
     font-weight: normal;
 }
@@ -201,80 +262,99 @@ h3.stamp {
     font-weight: normal;
 }
 
-.rfp-container {
-    margin-bottom: 50px;
-    padding-bottom: 20px;
+.manual-container {
+    margin: 0 auto 50px;
+    padding: 60px 0;
     position: relative;
-    width: 100%;
+    width: 800px;
     background: #dcdcd3;
+}
+#fe-header::before {
+    content: "FE 20-15";
+    display: inline;
+    border: 1px solid #231f20;
+    color: #231f20;
+    font-size: 22px;
+    letter-spacing: 0;
+    font-family: "Interstate Light Compressed";
+    height: 22px;
+    line-height: 22px;
+    margin-right: 12px;
+    padding: 0 12px;
+}
+h3.section-header {
+    height: 22px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+h3.section-header > span {
+    position: relative;
+    font-family: "DINPro Medium";
+    font-size: 20px;
+    letter-spacing: 0.025em;
+    color: #231f20;
+}
+h3.section-header > span::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65px;
+    border-bottom: 1px solid #f15a3b;
+}
+.mission > p{
+    width: 520px;
+    margin: auto;
+    font-family: "DINPro Medium";
+    font-size: 20px;
+    letter-spacing: 0.025em;
+    color: #231f20;
+}
+.mission {
+    /*width: 700px;*/
+    margin: auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f15a3b;
+}
+
+h4 {
+    color: #231f20;
+    font-family: "DINPro Medium";
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    margin: 40px 0 10px;
+}
+p.about-text {
+    margin: 0 auto;
+    color: #231f20;
+    font-family: "Courier New";
+    line-height: 18px;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+.dictionary {
+    color: #898989;
 }
 .outline {
     pointer-events: none;
     position: absolute;
     border: 1px solid black;
-    top: -20px;
-    bottom: -20px;
-    left: 0;
-    right: 0;
-    width: 900px;
+    top: 20px;
+    bottom: 20px;
+    left: -20px;
+    right: -20px;
+    /*width: 900px;*/
     margin: auto;
 }
-.phases {
-    display: inline-block;
-    border: 2px black solid;
-    margin: 15px -35px;
-    padding: 0 33px; /* compensate for border */
-}
-.phases p {
-    padding-bottom: 25px;
-    margin: 0;
-}
-.phases p:first-of-type {
-    border-bottom: 1px solid black;
-}
-h2.rfp, h3.rfp {
-    display: inline-block;
-    border-bottom: 1px solid black;
-    letter-spacing: 0.025em;
-    position: relative;
-    padding: 20px 0 10px;
-    font-family: "Interstate Light Compressed";
-    font-size: 22px;
-}
-h2.rfp {
-    border-bottom-color: #f15a3b;
-}
-h2.rfp:before {
-    letter-spacing: 0;
-    content: "RFP";
-    position: absolute;
-    left: -50px;
-    width: 40px;
-    border: 1px solid black;
-    text-align: center;
-}
-h3.rfp {
-    border-bottom: none;
-    padding: 5px 0;
-    margin: 25px 0 5px;
-    color: #5C5C59;
-}
-p.rfp {
-    text-align: left;
-    font-family: "Courier New Regular";
-    font-size: 14px;
-    line-height: 30px;
-}
+
 .text-container {
-    max-width: 600px;
+    width: 700px;
     margin: 0 auto
 }
 
-.wrapper {
-    min-height: 100%;
-    margin: 0 auto -140px;
-}
 .footer, .push {
+    margin-top: 29px;
     height: 140px;
 }
 .footer .links {
