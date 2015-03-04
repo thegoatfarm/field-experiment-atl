@@ -1,0 +1,168 @@
+/* NAV */
+
+.nav-container {
+    height: 75px;
+    width: 100%;
+    background: white;
+    text-align: center;
+}
+
+ul.nav {
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    border: 1px solid #231f20; 
+    border-top: none;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+    /*width: 100%;*/
+    text-align: center;
+}
+li > a {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding-left: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+/*.nav li > a:hover:after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 1px solid #f15a3b;
+
+}*/
+.nav > li > a:hover {
+    background: #dcdcd3;
+}
+li .higher {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-family: "Interstate Light Compressed";
+    font-size: 16px;
+    line-height: 16px;
+}
+li .lower {
+    border-right: 1px solid #231f20; 
+    /*position: absolute;*/
+    margin-top: 25px;
+    margin-left: 12px;
+    padding-right: 20px;
+    margin-right: 0;
+    text-align: left;
+    font-family: "Courier New";
+    font-size: 14px;
+    letter-spacing: 0;
+    white-space: nowrap;
+    line-height: 25px;
+    height: 25px;
+    display: inline-block;
+}
+.nav li:last-child .lower {
+    border-right: none;
+}
+
+
+
+
+/* CHEVRON SCROLLER */
+
+.toTop {
+    z-index: 100;
+    position: fixed;
+    top: 35px;
+    left: 35px;
+    width: 30px;
+    height: 45px;
+    cursor: pointer;
+}
+.toTop:before, .toTop:after {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-color: #f15a3b;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    -webkit-transition: -webkit-transform .6s .6s, opacity .6s, border-color .2s;
+    -moz-transition: -moz-transform .6s .6s, opacity .6s, border-color .2s;
+    -o-transition: -o-transform .6s .6s, opacity .6s, border-color .2s;
+    transition: transform .6s .6s, opacity .6s, border-color .2s;
+    opacity: 0;
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    vertical-align: top;
+    width: 20px;
+}
+.toTop:after {
+    top: 15px;
+}
+.toTop.active:before, .toTop.active:after {
+    opacity: 1;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.toTop:hover:before, .toTop:hover:after {
+    border-color: #231f20;
+}
+
+
+/* FOOTER */
+
+.footer, .push {
+    margin-top: 29px;
+    height: 140px;
+}
+.footer .links {
+    margin-top: 0;
+    height: 35px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+.footer .links li {
+    display: inline-block;
+    width: 100px;
+}
+.footer .links li.long {
+    width: 200px;
+}
+.footer .links li.long span {
+    white-space: nowrap;
+}
+.footer .links .non-link {
+    height: 35px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0 8px;
+    min-width: 80px;
+}
+.footer .links li > a {
+    height: 35px;
+}
+.footer .block{
+    width: 100%;
+    height: 95px;
+    background: #dcdcd3;
+}
