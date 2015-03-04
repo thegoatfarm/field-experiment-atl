@@ -1,0 +1,64 @@
+.rfp-container {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+    background: #dcdcd3;
+}
+.outline {
+    pointer-events: none;
+    position: absolute;
+    border: 1px solid black;
+    top: -20px;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    width: 900px;
+    margin: auto;
+}
+.phases {
+    display: inline-block;
+    border: 2px black solid;
+    margin: 15px -35px;
+    padding: 0 33px; /* compensate for border */
+}
+.phases p {
+    padding-bottom: 25px;
+    margin: 0;
+}
+.phases p:first-of-type {
+    border-bottom: 1px solid black;
+}
+h2.rfp, h3.rfp {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    letter-spacing: 0.025em;
+    position: relative;
+    padding: 20px 0 10px;
+    font-family: "Interstate Light Compressed";
+    font-size: 22px;
+}
+h2.rfp {
+    border-bottom-color: #f15a3b;
+}
+h2.rfp:before {
+    letter-spacing: 0;
+    content: "RFP";
+    position: absolute;
+    left: -50px;
+    width: 40px;
+    border: 1px solid black;
+    text-align: center;
+}
+h3.rfp {
+    border-bottom: none;
+    padding: 5px 0;
+    margin: 25px 0 5px;
+    color: #5C5C59;
+}
+p.rfp {
+    text-align: left;
+    font-family: "Courier New Regular";
+    font-size: 14px;
+    line-height: 30px;
+}
