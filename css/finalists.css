@@ -2,14 +2,14 @@
     width: 900px;
     margin: auto;
 }*/
-h1.finalists {
+h1.ftitle {
     text-align: left;
     color: #f15a3b;
     font-weight: 700;
     font-size: 35px;
     letter-spacing: 0.075em;
 }
-h1.finalists::selection, h1.finalists::-moz-selection {
+h1.ftitle::selection, h1.ftitle::-moz-selection {
     color: white;
 }
 .left-block {
@@ -50,6 +50,7 @@ h1.finalists::selection, h1.finalists::-moz-selection {
     height: 450px;
 }
 .finalist {
+    opacity: 0;
     /*margin: 0 auto 50px;*/
     margin: 20px;
     display: inline-block;
