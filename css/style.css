@@ -169,6 +169,7 @@ h3.stamp {
     padding: 0 12px;
 }
 h3.section-header {
+    text-align: left;
     height: 22px;
     line-height: 22px;
     margin-bottom: 10px;

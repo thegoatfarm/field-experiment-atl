@@ -131,6 +131,7 @@ ul.nav li {
 .footer, .push {
     margin-top: 29px;
     height: 140px;
+    clear: both;
 }
 .footer .links {
     margin-top: 0;
