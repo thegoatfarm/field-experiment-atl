@@ -1,3 +1,7 @@
 .finalist {
     opacity: 1;
 }
+.others {
+    padding-top: 150px;
+    clear: both;
+}
