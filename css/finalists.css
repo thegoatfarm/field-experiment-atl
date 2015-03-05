@@ -47,7 +47,7 @@ h1.ftitle::selection, h1.ftitle::-moz-selection {
 .info-block {
     display: inline-block;
     width: 390px;
-    height: 450px;
+    min-height: 450px;
 }
 .finalist {
     opacity: 0;

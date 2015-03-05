@@ -5,6 +5,9 @@
     width: 100%;
     background: #dcdcd3;
 }
+.wrapper.rfp-bg {
+    background-image: url(../img/bg2.png);
+}
 .outline {
     pointer-events: none;
     position: absolute;
