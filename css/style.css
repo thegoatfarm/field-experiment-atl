@@ -285,3 +285,9 @@ p.about-text {
     width: 700px;
     margin: 0 auto
 }
+.calendar-container {
+    text-align: center;
+}
+.calendar {
+    margin: 25px 0;
+}
