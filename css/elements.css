@@ -9,6 +9,7 @@
 
 ul.nav {
     height: 50px;
+    font-size: 0; /* removes space between elements */
     margin: 0 auto;
     padding: 0;
     display: inline-block;
