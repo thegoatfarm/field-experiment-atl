@@ -53,6 +53,7 @@ a { text-decoration: none; color: black; }
     width: 100%;
     padding: 148px 0;
     margin-bottom: 60px;
+    text-align: center;
     /*margin: 0 auto -140px;*/
 }
 .cover-white, .cover-white .stamp, .cover-white .inner-cover {
